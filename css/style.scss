@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Myriad Pro', 'Fira Sans', sans-serif, 'Proxima Nova Rg';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+  url('../fonts/MyriadPro-Regular.woff') format('woff'),
+  url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+  url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+  url('../fonts/ProximaNova-Regular.woff') format('woff'),
+  url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+  url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+
+}
+
+@import "bootstrap-reboot.min.css";
+@import "bootstrap-grid.min.css";
+@import "bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,700&display=swap');
+
+$fonts-main: 'Myriad Pro';
+$fonts-sub: 'Fira Sans', sans-serif;
+
+
+body {
+  position: relative;
+  background-color: #e83e8c;
+}
+
+.container {
+  width: 1110px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 27px 50px;
+
+  .tab-pane {
+    font-family: $fonts-main;
+    font-size: 12px;
+    color: #232323;
+    margin-bottom: 10px;
+    border-right: #e83e8c solid 3px;
+
+
+
+
+    input {
+      background: url('../images/market_03.png') no-repeat left #ffffff;
+      display: inline;
+      font-family: $fonts-sub;
+      font-size: 18px;
+      color: #6b6b6b;
+      padding:3px 25px;
+      border: none;
+      outline: none;
+      &:focus {
+        background: url('../images/market_03.png') no-repeat left ;
+        background-color: #ffffff !important;
+        border: none;
+      }
+    }
+    &:after {
+
+      display: block;
+      content: "";
+      width: 4px;
+      height: 20px;
+      background-color: #e83e8c;
+
+    }
+  }
+  }
